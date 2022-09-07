@@ -1,0 +1,594 @@
+* {
+    box-sizing: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    height: 70px;
+    align-items: center;
+}
+
+.logo {
+    grid-area: logo;
+    width: 120px;
+    height: 40px;
+    margin-left:5%;
+}
+
+#form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+}
+
+#navLinks {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+    margin-left: 2%;
+    flex:1;
+}
+
+li a{
+    text-decoration: none;
+}
+
+.login{
+    margin-right: 5%;
+}
+
+button {
+    background-color: #5127CC;
+    color: #fff;
+    width: fit-content;
+    height: 25px;
+    border: none;
+    border-radius: 50px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.login:hover, .enviar:hover {
+    cursor: pointer;
+}
+
+
+header {
+    position: relative;
+    background-image: url("./Materiales/manos.jpg");
+    background-position: center;
+    min-height:350px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: center;
+}
+
+/* Empieza Main */
+
+#soluciones {
+    background-color: #5298FF;
+    min-height: 550px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #fff;
+    padding: 70px;
+    text-align: start;
+    gap: 5px;
+}
+
+#soluciones div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#soluciones h2 {
+    padding: 40px;
+}
+
+#soluciones p {
+    padding: 40px;
+}
+
+#soluciones img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#oportunidades {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 400px;
+    padding-bottom: 50px;
+}
+
+#oportunidades p {
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding: 20px;
+}
+
+#oportunidades h2 {
+    padding: 40px;
+    text-align: center;
+}
+
+#oportunidadesCartas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#oportunidadesCartas div {
+    width: 220px;
+    height: 175px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.logoCarta {
+    width: 50px;
+    height: 40px;
+    padding: 30px;
+}
+
+.mas {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 20px;
+}
+
+.cartaTexto {
+    grid-area: texto;
+    color: #fff;
+    font-size: 24px;
+    padding-top: 7px;
+    padding-left: 30px;
+    max-width: 200px;
+}
+
+#servoluntario {
+    background-color: #DC3444;
+}
+
+#servoluntario .logoCarta{
+    width: 30px;
+    height: 55px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+#donar {
+    background-color: #FD9A07;
+}
+
+#reciclar {
+    background-color: #439802;
+}
+
+#llamadoslaborales {
+    background-color: #14A2B8;
+}
+
+#llamadosdelcorazón {
+    background-color: #483832;
+}
+
+#noticias {
+    background-color: #5298FF;
+    height: 550px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+#cartasnoticias {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    overflow: auto;
+    padding: 20px;
+}
+
+.cartanoticia {
+    color: black;
+    position: relative;
+    min-width: 220px;
+    width: 220px;
+    height: 350px;
+    background-color: #fff;
+    border-radius:10px;
+    display: grid;
+    grid-template-rows: 50% 1fr 5fr 1fr;
+}
+
+.cartanoticia img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tiempo {
+    color: #bbb;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px;
+    font-size: 10px;
+}
+
+.tiempo img {
+    border-radius: 0px;
+    width: 15px;
+    height: 15px;
+}
+
+#descripcioncarta {
+    font-size: 11px;
+}
+
+#descripcioncarta p {
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.cartanoticia a img{
+    width: 10px;
+    height: 10px;
+}
+
+.cartanoticia a {
+    display: flex;
+    justify-content: end;
+    width: 90%;
+    font-size: 8px;
+}
+
+#slide button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    margin: 5px
+}
+
+#contacto {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    padding: 30px;
+}
+
+#contacto:first-child {
+    display: flex;
+
+}
+
+#contacto h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#contacto img {
+    width: 40%;
+    height: 250px;
+    object-fit: cover;
+}
+
+#inputs{ 
+    display: grid;
+    position: relative;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-left: 30px;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 10px;
+    text-indent: 5px;
+    padding: 2px;
+}
+
+.vertical-form{
+    display: flex;
+    flex-direction: column;
+}
+
+#error-message{
+    color: red;
+}
+
+#help-message{
+    color:gray;
+    font-size: small;
+    align-self: end;
+}
+
+#contacto div div input {
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    padding: 2px;
+    text-indent: 5px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#inputs button {
+    position:absolute;
+    right: 26%;
+    bottom: 5px;
+}
+
+/* Empieza el footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    background-color: #5127CC;
+}
+
+#footercontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+    border: 1px  solid #bbb;
+    
+}
+
+.linkslogocontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .logo {
+    height: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+
+#footercontainer ul {
+    list-style: none;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.redes {
+    color: #fff;
+    padding: 30px;
+    text-indent: 5px;
+}
+
+/* Empieza el modal */
+
+#modal-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(63, 63, 63, 0.672);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+
+.modal {
+    display: grid;
+    padding: 1px;
+    position: relative;
+    top: 15%;
+    left: 15%;
+    background-color: white;
+    width: 70%;
+    height: 50%;;
+    border-radius: 25px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+}
+
+.imgmodal {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px 0 0 25px;
+    object-fit: cover;
+}
+
+.registrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center
+}
+
+.registrartop {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.registrartop span:first-child:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.registrar h1 {
+    text-align: center;
+}
+
+.cerrar {
+    padding-right: 20px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.cerrar:hover{
+    cursor: pointer;
+    transform: translateY(-1px);
+}
+
+.registrar img {
+    width: 25px;
+    height: 25px;;
+}
+
+#company, #organization {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #aaa;
+    width: 80%;
+    margin-left: 20px;
+    border-radius: 10px;
+    height: 80px;
+}
+
+#company div, #organization div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 70px;
+    border-radius: 9px 0 0 9px;
+    font-size: 13px;
+}
+
+#company:hover, #organization:hover {
+    box-shadow: 1px 1px #aaa;
+    cursor: pointer;
+}
+
+#company div:last-child, #organization div:last-child  {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 10px;
+    color: #aaa;
+}
+
+#company div:first-child {
+    background-color: #5288FF;
+    height: 100%;
+}
+
+#company h3 {
+    font-size: 20px;
+    color: #5288FF;
+}
+
+#organization div:first-child {
+    background-color: #7749F8;
+    height: 100%;
+}
+
+#organization h3 {
+    font-size: 20px;
+    color: #7749F8;
+
+}
+
+#organization {
+    margin-bottom: 30px;
+}
+
+
+
+
+@media (max-width: 844px) {
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "logo login"
+            "nav nav";     
+    }
+
+    .login{ 
+        margin-left: 50%;
+    }
+
+    #navLinks {
+        justify-content: center;
+    }
+
+    #soluciones {
+        grid-template-columns: 1fr ;
+    }
+
+    #soluciones div {
+        justify-content: flex-start
+    }
+
+    #contacto {
+        flex-direction: column;
+    }
+    .modal {
+        grid-template-columns: 1fr;
+
+    }
+
+    .imgmodal {
+        display:none;
+    }
+}
+
+.display{
+    display: block !important;
+}
+
+.align-to-end{
+    align-self: end;
+}
+.margined-right{
+    margin-right: 5%;
+}
+
+#form-fotter{
+    display: flex;
+    justify-content: center;
+}
