@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export const NavBar = () =>{
+export const NavBar = ({displayModal,loggedUser}) =>{
 
     return (
         <nav>
@@ -11,7 +11,11 @@ export const NavBar = () =>{
                 <li><a href="#noticias">Noticias</a></li>
                 <li>Ayuda</li>
             </ul>
-            <button id="login" className="login">INGRESAR</button>
+            <button id="login" 
+                className="login" 
+                onClick={()=>displayModal(true)}>
+                {loggedUser==""? "Ingresar" : loggedUser}
+            </button>
         </nav>
     )
 }
